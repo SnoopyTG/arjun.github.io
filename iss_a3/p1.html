@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(211, 22, 35);
+      color: white;
+      font-family: 'Anton', sans-serif;
+      background-image: url('grainy-overlay.png'); /* Replace with grainy texture from Lazarus */
+      background-size: cover;
+      background-repeat: repeat;
+      background-blend-mode: overlay;
+    }
+
+    .container {
+      padding: 100px 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+
+    .hero-image-wrapper img {
+      width: 600px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .hero-image-wrapper .main-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20em;
+      background-image: url('images/grainy-overlay.png');
+      background-repeat: repeat;
+      background-size: 300px;
+      background-color: black;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    h2, h3 {
+      font-size: 4.5em;
+      margin: 80px 0 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: black;
+    }
+
+    p, li, a {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 2em;
+      text-shadow: 1px 1px black;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+      gap: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: black;
+      background-color: white;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-image-wrapper">
+      <div class="main-title">ARJUN</div>
+      <img src="images/arjun_pic.jpeg" alt="Arjun Profile Picture">
+    </div>
+
+    <div class="profile-section">
+      <img src="birthplace1.jpg" alt="Birthplace Image 1">
+      <img src="birthplace2.jpg" alt="Birthplace Image 2">
+    </div>
+
+    <h2>About Me</h2>
+    <p>
+      Hey. I’m Arjun — passionate about tech, creativity, and storytelling. I build stuff with code, think deeply about systems,
+      and never stop learning. From robotics to design, I try to blur the line between tech and art.
+    </p>
+
+    <h2>Education</h2>
+    <p>
+      Currently pursuing Computer Science at IIIT Hyderabad. Previously studied at [Your School Name], where I developed a strong foundation in math and programming.
+    </p>
+    <ul>
+      <li>📚 Dean’s List (IIIT-H)</li>
+      <li>🏆 National Science Olympiad - Gold Medalist</li>
+      <li>💡 Built a motion-tracking fish sensor (yes, really)</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>💻 Python, C++, JavaScript</li>
+      <li>🌐 HTML, CSS, React</li>
+      <li>🤖 Arduino, Robotics prototyping</li>
+      <li>📈 Git, GitHub, Linux (Oh My Zsh)</li>
+    </ul>
+
+    <h2>Resume</h2>
+    <p>
+      <a href="cv.pdf" target="_blank">Download my CV (PDF)</a>
+    </p>
+  </div>
+</body>
+
+</html>
