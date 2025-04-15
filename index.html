@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun | Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <!-- Link to your external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @font-face {
+      font-family: 'Cartograph CF';
+      src: url('fonts/CartographCF-SemiBoldItalic.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(211, 22, 35);
+      color: white;
+      font-family: 'Anton', sans-serif;
+    }
+
+    .container {
+      padding: 100px 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      height: 100vh; /* Makes it extend from top to bottom of first view */
+    }
+
+    h2, h3 {
+      font-size: 4.5em;
+      margin: 80px 0 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: black;      
+      font-family: 'Anton', sans-serif;
+    }
+
+    p, li, a {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 2em;
+      text-shadow: 1px 1px black;
+      font-family: 'Cartograph CF', sans-serif;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+      gap: 0px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: black;
+      background-color: white;
+      padding: 5px;
+    }
+
+    .image-overlay-wrapper {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+
+    .image-overlay-wrapper img {
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-image-wrapper">
+      <div class="main-title">ARJUN</div>
+      <img src="images/arjun_pic_3.png" alt="Arjun Profile Picture">
+    </div>
+
+    <div class="profile-section">
+      <img src="images/sanfran.webp" alt="Birthplace Image 1">
+      <div class="image-overlay-wrapper">
+        <img src="images/sanfran_2.jpeg" alt="Birthplace Image 2">
+      </div>
+    </div>
+
+    <h2>Me</h2>
+    <p>
+    Hey, I’m Arjun. I was born in San Francisco, USA, and grew up mostly in Hyderabad, India. What excites me? Tech — its constant evolution and infinite potential fascinate me. Sports — the high stakes and real-life storylines keep me hooked, and playing offers a perfect escape from routine. Film — I’m drawn to artistic style and creative storytelling.
+    </p>
+
+    <h2>My Education</h2>
+    <p>
+      Currently pursuing Computer Science at IIIT Hyderabad as an undergrad. Previously studied at FIITJEE and JHPS.
+    </p>
+    <ul>
+      <li>Couple of Achievements:</li>
+      <li>- World Robotics Olympiad - Placed Third in the Country</li>
+      <li>- Young Innovators Program, IIT Kharagpur - Semi Finalist</li>
+    </ul>
+
+    <h2>My Technical Skills</h2>
+    <ul>
+      <li> Python, C++, JavaScript</li>
+      <li> HTML, CSS, React</li>
+      <li> Arduino, Robotics prototyping</li>
+      <li> Git, GitHub, Linux (Oh My Zsh)</li>
+    </ul>
+
+    <h2>My Resume</h2>
+    <p>
+      <a href="cv.pdf" target="_blank">Download my CV (PDF)</a>
+    </p>
+  </div>
+</body>
+<script src="p2.js"></script>
+</body>
+</html>
