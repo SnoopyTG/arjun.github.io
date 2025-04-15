@@ -93,6 +93,34 @@
       max-height: 100%;
       max-width: 100%;
     }
+
+    .text-analyzer-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .text-analyzer-wrapper textarea {
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .text-analyzer-wrapper button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      margin-top: 10px;
+    }
+
+    .text-analyzer-wrapper pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      max-width: 1000px;
+      text-align: left;
+      margin-top: 20px;
+    }
   </style>
 </head>
 
@@ -117,7 +145,11 @@
 
     <h2>My Education</h2>
     <p>
-      Currently pursuing Computer Science at IIIT Hyderabad as an undergrad. Previously studied at FIITJEE and JHPS.
+      <ul>
+        <li>-Bachelors in Computer Science, IIIT Hyderabad</li>
+        <li>-FIITJEE Junior College</li>
+        <li>-Jubilee Hills Public School</li>
+      </ul>
     </p>
     <ul>
       <li>Couple of Achievements:</li>
@@ -131,14 +163,29 @@
       <li> HTML, CSS, React</li>
       <li> Arduino, Robotics prototyping</li>
       <li> Git, GitHub, Linux (Oh My Zsh)</li>
+      <li>Databases - SQL and NoSQL</li>
     </ul>
 
     <h2>My Resume</h2>
     <p>
-      <a href="cv.pdf" target="_blank">Download my CV (PDF)</a>
+      <a href="CV.pdf" target="_blank">Download my Curriculum Vitae</a>
     </p>
   </div>
+
+  <div class="text-analyzer-wrapper">
+    <section>
+      <h2>Text Analyzer</h2>
+      <textarea id="textInput" rows="20" cols="100" placeholder="..."></textarea>
+      <br />
+      <button onclick="analyzeText()">Analyze</button>
+    
+      <h3>Analysis Output:</h3>
+      <pre id="output"></pre>
+    </section>
+  </div>
+
 </body>
 <script src="p2.js"></script>
-</body>
+<script src="p3.js"></script>
+
 </html>
